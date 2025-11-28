@@ -1,0 +1,30 @@
+{
+	"name": "netinventors/pw-teaser",
+	"type": "typo3-cms-extension",
+	"description": "Create powerful, dynamic page teasers with data from page properties and its content elements. Based on Extbase and Fluid Template Engine.",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Net Inventors GmbH",
+      "homepage": "https://www.netinventors.de",
+      "role": "Manufacturer"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+		"typo3/cms-core": "^13.4"
+	},
+  "replace": {
+    "t3/pw_teaser": "*"
+  },
+	"autoload": {
+		"psr-4": {
+			"PwTeaserTeam\\PwTeaser\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "pw_teaser"
+		}
+	}
+}

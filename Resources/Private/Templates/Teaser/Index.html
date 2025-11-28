@@ -1,0 +1,109 @@
+{namespace pw=PwTeaserTeam\PwTeaser\ViewHelpers}
+<f:layout name="Main" />
+
+<f:section name="main">
+	<div><b>Amount of pages found:</b> {pages -> f:count()}</div>
+
+	<f:if condition="{pages -> f:count()}">
+		<f:then>
+			<f:variable name="pages">{pages}</f:variable>
+
+			<f:if condition="{settings.enablePagination}">
+				<f:variable name="pages">{pagination.paginator.paginatedItems}</f:variable>
+			</f:if>
+
+			<ul class="list-unstyled">
+				<f:for each="{pages}" as="page" iteration="iterator">
+					<li>
+						<fieldset class="card card-light">
+							<legend class="card-header text-dark"><b>Title:</b> <f:link.page pageUid="{page.uid}" class="text-primary">{page.title}</f:link.page> <small>uid={page.uid}</small></legend>
+							<ul class="list-unstyled card-body text-dark mh">
+								<li><b>isCurrentPage:</b> <f:if condition="{page.isCurrentPage}"><f:then>Yes</f:then><f:else>No</f:else></f:if></li>
+								<li><b>subtitle:</b> {page.subtitle}</li>
+								<li><b>navTitle:</b> {page.navTitle}</li>
+								<li><b>keywords as String:</b> {page.keywords}</li>
+								<li>
+                                    <b>keywords:</b>
+									<f:if condition="{page.keywordsAsArray}">
+										<f:then>
+											<ul>
+												<f:for each="{page.keywordsAsArray}" as="keyword" iteration="iterator">
+													<li{f:if(condition:'{iterator.isLast} == 1', then:' class="isLast"')}>
+														{keyword}
+													</li>
+												</f:for>
+											</ul>
+										</f:then>
+										<f:else><em> none</em></f:else>
+									</f:if>
+								</li>
+								<li><b>description:</b> {page.description}</li>
+								<li><b>abstract:</b> {page.abstract}</li>
+								<li><b>slug:</b> {page.slug}</li>
+								<li><b>media:</b>
+									<f:if condition="{page.media}">
+										<f:then>
+											<ul class="list-unstyled">
+												<f:for each="{page.media}" as="mediaFile">
+													<li>
+														<f:image image="{mediaFile}" alt="{mediaFile.title}" maxWidth="120" maxHeight="100" />
+													</li>
+												</f:for>
+											</ul>
+										</f:then>
+										<f:else><em> none</em></f:else>
+									</f:if>
+								</li>
+								<li>
+									<b>categories:</b>
+									<f:if condition="{page.categories}">
+										<f:then>
+											<ul>
+												<f:for each="{page.categories}" as="category">
+													<li>
+														<b>{category.title}</b> <small>uid={category.uid}</small>
+														<f:if condition="{category.description}">
+															<p>{category.description -> f:format.nl2br()}</p>
+														</f:if>
+													</li>
+												</f:for>
+											</ul>
+										</f:then>
+										<f:else><em> none</em></f:else>
+									</f:if>
+								</li>
+								<li><b>crdate:</b> <f:format.date date="{page.crdate}" format="r" /></li>
+								<li><b>tstamp:</b> <f:format.date date="{page.tstamp}" format="r" /></li>
+								<li><b>lastUpdated:</b> <f:format.date date="{page.lastupdated}" format="r" /></li>
+								<li><b>starttime:</b> <f:format.date date="{page.starttime}" format="r" /></li>
+								<li><b>endtime:</b> <f:format.date date="{page.endtime}" format="r" /></li>
+								<li><b>newUntil:</b> <f:format.date date="{page.newUntil}" format="r" /></li>
+								<li><b>isNew:</b> <f:if condition="{page.isNew}"><f:then>Yes</f:then><f:else>No</f:else></f:if></li>
+								<li><b>author:</b> {page.author}</li>
+								<li><b>authorEmail:</b> {page.authorEmail}</li>
+								<li><b>rootLineDepth:</b> {page.rootLineDepth}</li>
+								<f:if condition="{settings.loadContents}">
+									<li>
+										<b>First image (of content elements, column 0)</b>: <br />
+										<pw:getContent contents="{page.contents}" as="content" cType="image" index="0">
+											<f:image src="{content.imageFiles.0.url}" alt="{content.imageFiles.0.title}" maxWidth="150" maxHeight="50" />
+										</pw:getContent>
+									</li>
+								</f:if>
+							</ul>
+						</fieldset>
+						<br />
+					</li>
+				</f:for>
+			</ul>
+			<f:if condition="{settings.enablePagination}">
+				<f:render partial="Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+			</f:if>
+
+			<style>.mh {max-height: 250px; overflow-y: auto;}</style>
+		</f:then>
+		<f:else>
+			<i>No pages found.</i>
+		</f:else>
+	</f:if>
+</f:section>

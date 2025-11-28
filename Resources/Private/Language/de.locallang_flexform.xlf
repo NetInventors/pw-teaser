@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages">
+		<header/>
+		<body>
+			<trans-unit id="general"><target>Allgemein Einstellungen</target></trans-unit>
+			<trans-unit id="ordering"><target>Anzeige Einstellungen</target></trans-unit>
+			<trans-unit id="enableFields"><target>Aktivierungsfelder</target></trans-unit>
+			<trans-unit id="template"><target>Template</target></trans-unit>
+
+			<trans-unit id="default"><target>[Durch TypoScript definiert]</target></trans-unit>
+			<trans-unit id="yes"><target>Ja</target></trans-unit>
+			<trans-unit id="no"><target>Nein</target></trans-unit>
+
+			<trans-unit id="sourceLabel"><target>Teaser-Quelle:</target></trans-unit>
+			<trans-unit id="source.thisChildren"><target>Unterseiten der aktuellen Seite</target></trans-unit>
+			<trans-unit id="source.thisChildrenRecursively"><target>Unterseiten der aktuellen Seite (rekursiv)</target></trans-unit>
+			<trans-unit id="source.custom"><target>Ausgewählte Seiten</target></trans-unit>
+			<trans-unit id="source.customChildren"><target>Unterseiten von ausgewählten Seiten</target></trans-unit>
+			<trans-unit id="source.customChildrenRecursively"><target>Unterseiten von ausgewählten Seiten (rekursiv)</target></trans-unit>
+			<trans-unit id="customPages"><target>Bestimmte Seiten:</target></trans-unit>
+			<trans-unit id="recursionDepthFrom"><target>Rekursionstiefe (von):</target></trans-unit>
+			<trans-unit id="recursionDepth"><target>Rekursionstiefe (bis):</target></trans-unit>
+			<trans-unit id="enablePagination"><target>Aktiviere Paginierung:</target></trans-unit>
+			<trans-unit id="itemsPerPage"><target>Anzahl Einträge pro Seite:</target></trans-unit>
+
+			<trans-unit id="loadContents"><target>Lade Inhalte (Content-Elemente) von jeder Seite um im Template verwendet werden zu können (benötigt mehr Performance):</target></trans-unit>
+			<trans-unit id="orderByPlugin"><target>Sortiere die ausgewählten Seiten wie in der Liste oben (Sortierungs-Einstellungen im Anzeige-Einstellungen-Tab werden überschrieben):</target></trans-unit>
+			<trans-unit id="pageMode"><target>Seiten-Modus:</target></trans-unit>
+			<trans-unit id="pageMode.flat"><target>Flach</target></trans-unit>
+			<trans-unit id="pageMode.nested"><target>Verschachtelt</target></trans-unit>
+
+			<trans-unit id="order"><target>Sortieren nach:</target></trans-unit>
+			<trans-unit id="order.crdate"><target>Erstellungsdatum</target></trans-unit>
+			<trans-unit id="order.tstamp"><target>Änderungsdatum</target></trans-unit>
+			<trans-unit id="order.starttime"><target>Veröffentlichungsdatum (von)</target></trans-unit>
+			<trans-unit id="order.endtime"><target>Ablaufdatum (bis)</target></trans-unit>
+			<trans-unit id="order.newtime"><target>"Markiert als neu" Datum</target></trans-unit>
+			<trans-unit id="order.sorting"><target>Sortierung im Seitenbaum</target></trans-unit>
+			<trans-unit id="order.title"><target>Titel (alphabetisch)</target></trans-unit>
+			<trans-unit id="order.random"><target>Zufällige Sortierung</target></trans-unit>
+			<trans-unit id="order.customField"><target>Benutzerdefiniertes Feld</target></trans-unit>
+
+			<trans-unit id="orderByCustomField"><target>Benutzerdefiniertes Feld, nach dem sortiert werden soll (wirft einen Fehler, wenn das Feld nicht existiert):</target></trans-unit>
+			<trans-unit id="orderDirection"><target>Sortierrichtung:</target></trans-unit>
+			<trans-unit id="orderDirection.asc"><target>Aufsteigend (A-Z, Älteste und Wenigste als Erstes)</target></trans-unit>
+			<trans-unit id="orderDirection.desc"><target>Absteigend (Z-A, Neuste und Meiste als Erstes)</target></trans-unit>
+			<trans-unit id="limit"><target>Limit (max. Seitenanzahl)</target></trans-unit>
+			<trans-unit id="showNavHiddenItems"><target>Zeige Seiten, welche in der Navigation ausgeblendet sind</target></trans-unit>
+			<trans-unit id="hideCurrentPage"><target>Verstecke die aktuelle Seite von der Liste</target></trans-unit>
+			<trans-unit id="showDoktypes"><target>Zeige Seiten mit dem Doktype (kommagetrennt, leer lassen für alle)</target></trans-unit>
+			<trans-unit id="ignoreUids"><target>Ignoriere die folgenden Seiten nach Ihrer UID (kommagetrennt)</target></trans-unit>
+			<trans-unit id="categories"><target>Filtere nach Kategorien</target></trans-unit>
+			<trans-unit id="categoryMode"><target>Kategorie Modus</target></trans-unit>
+			<trans-unit id="categoryMode.or"><target>Zeige Seiten mit ausgewählten Kategorien (ODER)</target></trans-unit>
+			<trans-unit id="categoryMode.and"><target>Zeige Seiten mit ausgewählten Kategorien (UND)</target></trans-unit>
+			<trans-unit id="categoryMode.orNot"><target>Zeige Seiten mit ausgewählten Kategorien NICHT (ODER)</target></trans-unit>
+			<trans-unit id="categoryMode.andNot"><target>Zeige Seiten mit ausgewählten Kategorien NICHT (UND)</target></trans-unit>
+
+			<trans-unit id="templateType"><target>Template-Typ:</target></trans-unit>
+			<trans-unit id="templateType.file"><target>HTML-Datei</target></trans-unit>
+			<trans-unit id="templateType.directory"><target>Fluid-Template Verzeichnis</target></trans-unit>
+			<trans-unit id="templateType.preset"><target>Vorlage</target></trans-unit>
+
+			<trans-unit id="templatePreset"><target>Template Vorlage</target></trans-unit>
+			<trans-unit id="templateRootFile"><target>Template Datei (mit Pfad)</target></trans-unit>
+			<trans-unit id="templateRootPath"><target>Template Verzeichnis</target></trans-unit>
+			<trans-unit id="partialRootPath"><target>Partial Verzeichnis</target></trans-unit>
+			<trans-unit id="layoutRootPath"><target>Layout Verzeichnis</target></trans-unit>
+		</body>
+	</file>
+</xliff>

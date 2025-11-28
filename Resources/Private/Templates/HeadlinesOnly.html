@@ -1,0 +1,12 @@
+{namespace pw=PwTeaserTeam\PwTeaser\ViewHelpers}
+<f:layout name="Main" />
+
+<f:section name="main">
+	<ul>
+		<f:for each="{pages}" as="page" iteration="iterator">
+			<li class="page {f:if(condition:'{iterator.isFirst}', then:' first')}{f:if(condition:'{iterator.isLast}', then:' last')}">
+				<f:link.page pageUid="{page.uid}" title="{page.title}">{page.title}</f:link.page>
+			</li>
+		</f:for>
+	</ul>
+</f:section>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages">
+		<header/>
+		<body>
+			<trans-unit id="newContentElementWizardTitle"><source>Page teaser</source></trans-unit>
+			<trans-unit id="newContentElementWizardDescription"><source>Create powerful, dynamic page teasers with pw_teaser and fluid templates.</source></trans-unit>
+
+            <trans-unit id="pagination_first"><source>&#171;</source></trans-unit>
+            <trans-unit id="pagination_previous"><source>&lt;</source></trans-unit>
+            <trans-unit id="pagination_next"><source>&gt;</source></trans-unit>
+            <trans-unit id="pagination_last"><source>&#187;</source></trans-unit>
+		</body>
+	</file>
+</xliff>

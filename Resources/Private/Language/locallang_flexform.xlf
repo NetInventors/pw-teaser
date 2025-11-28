@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages">
+		<header/>
+		<body>
+			<trans-unit id="general"><source>General preferences</source></trans-unit>
+			<trans-unit id="ordering"><source>Visibility options</source></trans-unit>
+			<trans-unit id="enableFields"><source>EnableFields</source></trans-unit>
+			<trans-unit id="template"><source>Template</source></trans-unit>
+
+			<trans-unit id="default"><source>[Defined by TypoScript]</source></trans-unit>
+			<trans-unit id="yes"><source>Yes</source></trans-unit>
+			<trans-unit id="no"><source>No</source></trans-unit>
+
+			<trans-unit id="sourceLabel"><source>Teaser source:</source></trans-unit>
+			<trans-unit id="source.thisChildren"><source>Childpages of current page</source></trans-unit>
+			<trans-unit id="source.thisChildrenRecursively"><source>Childpages of current page (recursively)</source></trans-unit>
+			<trans-unit id="source.custom"><source>Selected pages</source></trans-unit>
+			<trans-unit id="source.customChildren"><source>Childpages of selected pages</source></trans-unit>
+			<trans-unit id="source.customChildrenRecursively"><source>Childpages of selected pages (recursively)</source></trans-unit>
+			<trans-unit id="customPages"><source>Custom Pages:</source></trans-unit>
+			<trans-unit id="recursionDepthFrom"><source>Recursion depth (from):</source></trans-unit>
+			<trans-unit id="recursionDepth"><source>Recursion depth (to):</source></trans-unit>
+			<trans-unit id="enablePagination"><source>Enable pagination:</source></trans-unit>
+			<trans-unit id="itemsPerPage"><source>Items per page:</source></trans-unit>
+
+			<trans-unit id="loadContents"><source>Load content elements of each page for use in template (requires more performance):</source></trans-unit>
+			<trans-unit id="orderByPlugin"><source>Order selected pages as in the list above (this will overwrite the order settings in visibility options tab)</source></trans-unit>
+			<trans-unit id="pageMode"><source>Page mode:</source></trans-unit>
+			<trans-unit id="pageMode.flat"><source>Flat</source></trans-unit>
+			<trans-unit id="pageMode.nested"><source>Nested</source></trans-unit>
+
+			<trans-unit id="order"><source>Order by:</source></trans-unit>
+			<trans-unit id="order.crdate"><source>Creation Date</source></trans-unit>
+			<trans-unit id="order.tstamp"><source>Modification Date</source></trans-unit>
+			<trans-unit id="order.starttime"><source>Publish Date</source></trans-unit>
+			<trans-unit id="order.endtime"><source>Expiration Date</source></trans-unit>
+			<trans-unit id="order.newtime"><source>Marked as new Date</source></trans-unit>
+			<trans-unit id="order.sorting"><source>Sorting in pagetree</source></trans-unit>
+			<trans-unit id="order.title"><source>Title (alphabetical)</source></trans-unit>
+			<trans-unit id="order.random"><source>Random</source></trans-unit>
+			<trans-unit id="order.customField"><source>Custom field</source></trans-unit>
+
+			<trans-unit id="orderByCustomField"><source>Custom field to order by (throws exception, if field doesn't exists):</source></trans-unit>
+			<trans-unit id="orderDirection"><source>Order direction:</source></trans-unit>
+			<trans-unit id="orderDirection.asc"><source>Ascending (A-Z, oldest and fewest first)</source></trans-unit>
+			<trans-unit id="orderDirection.desc"><source>Descending (Z-A, newest and most first)</source></trans-unit>
+			<trans-unit id="limit"><source>Limit (max. number of pages to show):</source></trans-unit>
+			<trans-unit id="showNavHiddenItems"><source>Show pages which are hidden for navigation:</source></trans-unit>
+			<trans-unit id="hideCurrentPage"><source>Hide current page from list:</source></trans-unit>
+			<trans-unit id="showDoktypes"><source>Show pages with doktypes (comma separated, leave empty to show all):</source></trans-unit>
+			<trans-unit id="ignoreUids"><source>Ignore the following pages by uid (comma separated):</source></trans-unit>
+			<trans-unit id="categories"><source>Filter by categories:</source></trans-unit>
+			<trans-unit id="categoryMode"><source>Category mode:</source></trans-unit>
+			<trans-unit id="categoryMode.or"><source>Show pages with selected categories (OR)</source></trans-unit>
+			<trans-unit id="categoryMode.and"><source>Show pages with selected categories (AND)</source></trans-unit>
+			<trans-unit id="categoryMode.orNot"><source>Do NOT show pages witch selected categories (OR)</source></trans-unit>
+			<trans-unit id="categoryMode.andNot"><source>Do NOT show pages witch selected categories (AND)</source></trans-unit>
+
+			<trans-unit id="templateType"><source>Template type:</source></trans-unit>
+			<trans-unit id="templateType.file"><source>HTML file</source></trans-unit>
+			<trans-unit id="templateType.directory"><source>Fluid template directory</source></trans-unit>
+			<trans-unit id="templateType.preset"><source>Preset</source></trans-unit>
+
+			<trans-unit id="templatePreset"><source>Template preset</source></trans-unit>
+			<trans-unit id="templateRootFile"><source>Template file (with fullpath, example: fileadmin/templates/pw_teaser/Example.html):</source></trans-unit>
+			<trans-unit id="templateRootPath"><source>Template directory (with fullpath, example: fileadmin/templates/pw_teaser/):</source></trans-unit>
+			<trans-unit id="partialRootPath"><source>Partial directory (with fullpath, example: fileadmin/templates/pw_teaser/Partials/):</source></trans-unit>
+			<trans-unit id="layoutRootPath"><source>Layouts directory (with fullpath, example: fileadmin/templates/pw_teaser/Layouts/):</source></trans-unit>
+		</body>
+	</file>
+</xliff>

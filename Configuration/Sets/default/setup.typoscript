@@ -1,0 +1,37 @@
+plugin.tx_pwteaser {
+    view.presets {
+        default {
+            label = Default
+            templateRootFile = EXT:pw_teaser/Resources/Private/Templates/Teaser/Index.html
+            partialRootPaths.10 = EXT:pw_teaser/Resources/Private/Partials
+            layoutRootPaths.10 = EXT:pw_teaser/Resources/Private/Layouts
+        }
+
+        headlineAndImage {
+            label = Headline & Images
+            templateRootFile = EXT:pw_teaser/Resources/Private/Templates/HeadlineAndImage.html
+            partialRootPaths.10 = EXT:pw_teaser/Resources/Private/Partials
+            layoutRootPaths.10 = EXT:pw_teaser/Resources/Private/Layouts
+        }
+
+        headlineOnly {
+            label = Headline only
+            templateRootFile = EXT:pw_teaser/Resources/Private/Templates/HeadlinesOnly.html
+            partialRootPaths.10 = EXT:pw_teaser/Resources/Private/Partials
+            layoutRootPaths.10 = EXT:pw_teaser/Resources/Private/Layouts
+        }
+    }
+}
+
+lib.tx_pwteaser = USER
+lib.tx_pwteaser {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+
+    vendorName = PwTeaserTeam
+    extensionName = PwTeaser
+    pluginName = Pi1
+
+    settings =< plugin.tx_pwteaser.settings
+    persistence =< plugin.tx_pwteaser.persistence
+    view =< plugin.tx_pwteaser.view
+}

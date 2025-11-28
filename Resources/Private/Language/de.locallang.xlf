@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages">
+		<header/>
+		<body>
+			<trans-unit id="newContentElementWizardTitle"><target>Seiten-Teaser</target></trans-unit>
+			<trans-unit id="newContentElementWizardDescription"><target>Erstelle mächtige und dynamische Seiten-Teaser mit pw_teaser und Fluid-Templates.</target></trans-unit>
+		</body>
+	</file>
+</xliff>
