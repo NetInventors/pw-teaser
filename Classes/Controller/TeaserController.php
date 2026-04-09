@@ -200,19 +200,19 @@ class TeaserController extends ActionController
         $templateType = $this->viewSettings['templateType'] ?? '';
         $templateFile = $this->viewSettings['templateRootFile'] ?? '';
 
-        $layoutRootPaths = (array) ($this->viewSettings['layoutRootPath'] ?: null);
+        $layoutRootPaths = (array) (($this->viewSettings['layoutRootPath'] ?? null) ?: null);
 
         if ([] === $layoutRootPaths) {
             $layoutRootPaths = $this->viewSettings['layoutRootPaths'] ?? [];
         }
 
-        $partialRootPaths = (array) ($this->viewSettings['partialRootPath'] ?: null);
+        $partialRootPaths = (array) (($this->viewSettings['partialRootPath'] ?? null) ?: null);
 
         if ([] === $partialRootPaths) {
             $partialRootPaths = $this->viewSettings['partialRootPaths'] ?? [];
         }
 
-        $templateRootPaths = (array) ($this->viewSettings['templateRootPath'] ?: null);
+        $templateRootPaths = (array) (($this->viewSettings['templateRootPath'] ?? null) ?: null);
 
         if ([] === $templateRootPaths) {
             $templateRootPaths = $this->viewSettings['templateRootPaths'] ?? [];
